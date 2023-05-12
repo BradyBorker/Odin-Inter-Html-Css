@@ -18,8 +18,44 @@
             <p>Photo by <em>Halie West</em> on <em>Unsplash</em></p>
         </div>
     </div>
-    <div class="form-container">
-
+    <div class="right-section-container">
+        <p class="service-text-container">This is not a real online service! You know you need something
+            like this in your life to help you realize your deepest dreams.
+            Sign up <em>now</em> to get started.
+        </p>
+        <p class="service-text-container">You <em>know</em> you want to.</p>
+        <div class="form-container">
+            <span class="form-header">Let's do this!</span>
+            <form action="" method="" id="form">
+                <label for="first_name">
+                    FIRST NAME
+                    <input type="text" id="first_name" name="first_name" required>
+                </label>
+                <label for="last_name">
+                    LAST NAME 
+                    <input type="text" id="last_name" name="last_name" required>
+                </label>
+                <label for="email">
+                    EMAIL 
+                    <input type="email" id="email" name="email" required>
+                </label>
+                <label for="phone_number">
+                    PHONE NUMBER 
+                    <input type="tel" id="phone_number" name="phone_number" required> 
+                </label>
+                <label for="password">
+                    PASSWORD
+                    <input type="password" id="password" name="password" class="error" required>
+                    <span class="error"></span>
+                </label>
+                <label for="confirm_password">
+                    CONFIRM PASSWORD 
+                    <input type="password" id="confirm_password" name="confirm_password" class="error" required>
+                </label>
+            </form>
+        </div>
+        <button type="submit" form="form">Create Account</button>
+        <span class="login-text">Already have an account? <a href="">Log in</a></span>
     </div>
 </body>
 </html>
