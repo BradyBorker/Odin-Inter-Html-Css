@@ -135,8 +135,11 @@ input:not([type="password"]):invalid:focus {
     border: 1px solid red;
 }
 
-input:not([type="password"]):valid:hover,
-input:not([type="password"]):valid:focus {
+input:not([type="password"]):valid {
+    border: 1px solid green;
+}
+
+input[type="password"] {
     border: 1px solid green;
 }
 
