@@ -12,8 +12,63 @@
 }
 
 .header {
+    padding: 10px 60px;
     border: 1px solid red;
     grid-column: 2 / 3;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+}
+
+.header .search-bar {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    gap: 10px;
+    align-items: center;
+}
+
+.header .search-bar > input {
+    border: none;
+    border-radius: 15px;
+    background-color: lightgray;
+    height: 30px;
+}
+
+.header .profile-info {
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    align-items: center;
+    justify-content: end;
+    gap: 30px;
+}
+
+.portrait {
+    height: 45px;
+    width: 45px;
+    border: 1px solid black;
+    border-radius: 50%;
+    /* background-image: ; */
+}
+
+.header-welcome {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    gap: 25px;
+    align-items: center;
+    font-size: large;
+    line-height: 3ch;
+}
+
+.welcome-text > p:first-child {
+    font-size: small;
+}
+
+
+.header-welcome .portrait {
+    height: 65px;
+    width: 65px;
 }
 
 .sidebar {
