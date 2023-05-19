@@ -5,10 +5,9 @@
 }
 
 .container {
-    height: 100vh;
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
 }
 
 .header {
@@ -34,6 +33,7 @@
     border-radius: 15px;
     background-color: lightgray;
     height: 30px;
+    padding: 5px;
 }
 
 .header .profile-info {
@@ -49,7 +49,6 @@
     width: 45px;
     border: 1px solid black;
     border-radius: 50%;
-    /* background-image: ; */
 }
 
 .header-welcome {
@@ -69,6 +68,23 @@
 .header-welcome .portrait {
     height: 65px;
     width: 65px;
+}
+
+.header-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: end;
+    gap: 10px;
+}
+
+.header-buttons > button {
+    height: 40px;
+    width: 90px;
+    border: none;
+    border-radius: 18px;
+    background-color: blue;
+    color: white;
 }
 
 .sidebar {
@@ -91,7 +107,79 @@
 }
 
 .main-content {
+    padding: 25px 20px;
     border: 1px solid green;
     grid-column: 2;
     grid-row: 2;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: max-content 1fr;
+    gap: 20px;
+}
+
+.content-left-column {
+    grid-column: 1;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, max-content);
+    gap: 20px;
+}
+
+.project-card {
+    height: 140px;
+    border: 1px solid black;
+    border-left: 8px solid orange;
+    border-radius: 12px;
+    padding: 30px 20px;
+
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    grid-template-rows: 1fr max-content;
+}
+
+.project-card .card-text {
+    grid-column: 1 / -1;
+}
+
+.project-card .card-text > p:first-child {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.project-card .card-icons {
+    justify-self: end;
+
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    gap: 20px;
+}
+
+.content-right-column {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.announcements {
+    padding: 15px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    border: 1px solid black;
+    border-radius: 12px;
+}
+
+.announcements > div {
+    padding: 15px;
+}
+
+.announcements > div:nth-child(1),
+.announcements > div:nth-child(2) {
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+}
+
+.announcements > div > p:first-child {
+    font-weight: bold;
+    margin-bottom: 5px;
 }
