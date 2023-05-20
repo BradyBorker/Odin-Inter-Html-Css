@@ -138,7 +138,16 @@
     display: grid;
     grid-template-columns: max-content 1fr;
     align-items: center;
-    gap: 20px;
+    gap: 25px;
+}
+
+.sidebar > div > img {
+    width: 23px; 
+    justify-self: center;
+}
+
+.sidebar > .top-sidebar > img {
+    width: 50px;
 }
 
 .sidebar > div > p {
@@ -170,13 +179,14 @@
 
 .sidebar .top-sidebar {
     font-size: var(--sidebar-header);
-    gap: 9px;
+    gap: 10px;
 
 }
 
 .middle-sidebar,
 .bottom-sidebar {
     font-size: var(--sidebar);
+    margin-left: 12px;
 }
 
 .main-content {
