@@ -121,6 +121,10 @@
     cursor: pointer
 }
 
+.header-buttons > button:hover {
+    transform: scale(1.1);
+}
+
 .sidebar {
     padding: 25px;
     grid-column: 1 / 2;
@@ -188,6 +192,11 @@
     margin-left: 12px;
 }
 
+.column-title {
+    font-weight: bold;
+    font-size: var(--column-title);
+}
+
 .main-content {
     padding: 25px 20px;
     padding-bottom: 60px;
@@ -244,6 +253,7 @@
 
 .card-icons > img {
     width: 25px;
+    cursor: pointer;
 }
 
 .content-right-column {
@@ -306,9 +316,4 @@
 .trending-card > .profiles > div > p:last-child {
     font-weight: lighter;
     font-size: 14px;
-}
-
-.column-title {
-    font-weight: bold;
-    font-size: var(--column-title);
 }
