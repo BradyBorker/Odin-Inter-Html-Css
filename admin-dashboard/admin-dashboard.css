@@ -139,8 +139,10 @@
     gap: 20px;
 }
 
-.top-sidebar {
+.sidebar .top-sidebar {
     font-size: var(--sidebar-header);
+    gap: 9px;
+
 }
 
 .middle-sidebar,
