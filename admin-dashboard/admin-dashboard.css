@@ -180,7 +180,6 @@
 .sidebar .top-sidebar {
     font-size: var(--sidebar-header);
     gap: 10px;
-
 }
 
 .middle-sidebar,
@@ -241,6 +240,10 @@
     display: grid;
     grid-template-columns: repeat(3, max-content);
     gap: 20px;
+}
+
+.card-icons > img {
+    width: 25px;
 }
 
 .content-right-column {
